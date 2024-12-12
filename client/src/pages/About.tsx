@@ -7,7 +7,7 @@ import TeamSection from "../components/sections/about/TeamSection";
 const About = () => {
   return (
     <Layout>
-      <div className="px-20">
+      <div className="lg:px-20">
         <IntroSection />
         <MissionSection />
         <TeamSection />

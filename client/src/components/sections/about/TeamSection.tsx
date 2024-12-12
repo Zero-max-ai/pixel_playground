@@ -1,10 +1,11 @@
 // import CTAButton from "../../CTAButton";
 import RouteButton from "../../RouteButton";
+import Me from "../../../assets/me.jpg";
 
 const TeamSection = () => {
   return (
-    <div className="py-20 flex items-center justify-between w-10/12 mx-auto">
-      <div className="w-5/12 gap-5 flex flex-col">
+    <div className="py-20 flex flex-col-reverse items-center justify-between max-lg:gap-10 w-full lg:w-10/12 mx-auto">
+      <div className="w-full lg:w-5/12 gap-5 flex flex-col">
         <h1 className="text-[40px] poppins-bold">Meet the creator</h1>
         <span className="">
           Hi, I’m Akshat Gangi, the one-man team behind Pixel Playground. As a
@@ -31,11 +32,9 @@ const TeamSection = () => {
       </div>
       <div className="shadow-xl">
         <img
-          src={
-            "https://digwallpapers.com/wallpapers/full/8/1/5/53217-1440x2560-studio-ghibli-wallpaper-photo-phone-hd.jpg"
-          }
+          src={Me}
           alt={"Profile Pic"}
-          className="h-[350px] border-4 border-white"
+          className="h-[300px] lg:h-[400px] border-4 border-white"
         />
       </div>
     </div>

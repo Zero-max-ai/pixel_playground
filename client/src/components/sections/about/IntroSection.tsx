@@ -1,6 +1,6 @@
 const IntroSection = () => {
   return (
-    <div className="w-10/12 mx-auto py-20 flex flex-col gap-10">
+    <div className="w-full lg:w-10/12 mx-auto py-20 flex flex-col gap-10">
       <h1 className="poppins-bold text-[40px] text-center">
         About Pixel Playground
       </h1>
