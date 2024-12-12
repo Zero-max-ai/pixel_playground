@@ -19,7 +19,7 @@ const ReportForm = () => {
   const handleSubmitEvent = () => {}
 
   return (
-    <div className="flex flex-col gap-3 w-4/12 mx-auto bg-formBg shadow-md px-[46px] py-[26px] rounded-[13px]">
+    <div className="flex flex-col gap-3 w-full lg:w-4/12 mx-auto bg-formBg shadow-md px-[46px] py-[26px] rounded-[13px]">
       <TextInput
         label={"Full Name"}
         type={"text"}
