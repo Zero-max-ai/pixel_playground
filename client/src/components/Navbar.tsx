@@ -1,9 +1,25 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { navigationLinks, navigationLinksProps } from "../utils/index";
 
 const Navbar = () => {
   return (
-    <header>
-      <Link to={"/"}>PixelPlayground</Link>
+    <header className="flex items-center justify-between px-10 lg:px-32 py-2 shadow">
+      <Link to={"/"} className="poppins-black text-[36px]">
+        PixelPlayground
+      </Link>
+      <div className="flex items-center gap-10 font-semibold">
+        {navigationLinks.map(({ title, renderTo }: navigationLinksProps) => {
+          return (
+            <NavLink
+              key={title}
+              to={renderTo}
+              className="hover:underline underline-offset-4"
+            >
+              {title}
+            </NavLink>
+          );
+        })}
+      </div>
     </header>
   );
 };

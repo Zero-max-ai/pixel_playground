@@ -57,3 +57,9 @@ colors: {
 ## about page
 
 ## gallery page
+
+## things to add -
+
+-   hamburger ()
+-   connect with me - team section ()
+-   responsive [navbar, footer]

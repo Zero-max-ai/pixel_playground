@@ -7,9 +7,9 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div>
+    <div className="bg-lightBg text-textColor min-h-[100vh] w-full">
       <Navbar />
-      {children}
+      <div className="w-10/12 mx-auto">{children}</div>
       <Footer />
     </div>
   );
