@@ -63,3 +63,6 @@ colors: {
 -   hamburger ()
 -   connect with me - team section ()
 -   responsive [navbar, footer]
+
+-   have to add the icons to mission, place my actual profile pic and add a proper link in connect with me.
+    and in report page, add the attachment input and give the actual functionallity to the form button!
