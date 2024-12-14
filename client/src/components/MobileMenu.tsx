@@ -18,7 +18,7 @@ const MobileMenu = () => {
                     key={title}
                     to={renderTo}
                     onClick={toggleMenu}
-                    className="poppins-bold text-4xl hover:underline underline-offset-4"
+                    className="poppins-bold text-2xl hover:underline underline-offset-4"
                   >
                     {title}
                   </NavLink>

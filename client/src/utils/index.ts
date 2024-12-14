@@ -45,3 +45,38 @@ export const reportOptions: reportOptionsProps[] = [
   { value: "performance", label: "Performance Issue" },
   { value: "other", label: "Other" },
 ];
+
+import AI from "../assets/AI.svg";
+import Download from "../assets/Download.svg";
+import ColorPalette from "../assets/ColorPalette.svg";
+
+export interface FeatureProps {
+  title: string;
+  description: string;
+  iconType: string;
+  iconPath: string;
+}
+
+export const featureCards: FeatureProps[] = [
+  {
+    title: "Create Custom Palettes",
+    description:
+      "Your art, your colors. Easily build and save custom palettes to match your vision.",
+    iconType: "palette",
+    iconPath: ColorPalette,
+  },
+  {
+    title: "Download in Multiple Formats",
+    description:
+      "Export your creations in PNG, JPEG, JPG, or SVG for crisp designs.",
+    iconType: "file",
+    iconPath: Download,
+  },
+  {
+    title: "AI-Powered Pixelation",
+    description:
+      "Upload any image and let our AI transform it into pixel art in seconds.",
+    iconType: "ai",
+    iconPath: AI,
+  },
+];
