@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 interface RouteButtonProps {
   title: string;
@@ -14,13 +15,20 @@ const RouteButton: React.FC<RouteButtonProps> = ({
   target = "_self",
 }) => {
   return (
-    <Link
-      to={loc}
-      target={target}
-      className={`py-1 px-4 w-fit text-sm poppins-bold rounded-md ${classname ? classname : ""}`}
+    <motion.div
+      initial={{ opacity: 0, y: -20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1, delay: 0.35 }}
     >
-      {title}
-    </Link>
+      <Link
+        to={loc}
+        target={target}
+        className={`py-1 px-4 w-fit text-sm poppins-bold rounded-md ${classname ? classname : ""}`}
+      >
+        {title}
+      </Link>
+    </motion.div>
   );
 };
 

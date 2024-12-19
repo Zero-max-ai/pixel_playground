@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { reportOptions } from "../../../utils/index";
+import { motion } from "framer-motion";
 
 import TextInput from "../../TextInput";
 import OptionInput from "../../OptionInput";
 import TextAreaInput from "../../TextAreaInput";
 // import AttachmentInput from '../../AttachmentInput'
-import CTAButton from '../../CTAButton'
+import CTAButton from "../../CTAButton";
 
 const ReportForm = () => {
   const [name, setName] = useState("");
@@ -15,11 +16,17 @@ const ReportForm = () => {
   // const [attachment, setAttachment] = useState(null);
 
   // const handleAttachmentChange = () => {};
-  
-  const handleSubmitEvent = () => {}
+
+  const handleSubmitEvent = () => {};
 
   return (
-    <div className="flex flex-col gap-3 w-full xl:w-5/12 mx-auto bg-formBg shadow-md px-[46px] py-[26px] rounded-[13px]">
+    <motion.div
+      initial={{ opacity: 0, y: -20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1, delay: 0.4 }}
+      className="flex flex-col gap-3 w-full xl:w-5/12 mx-auto bg-formBg shadow-md px-[46px] py-[26px] rounded-[13px]"
+    >
       <TextInput
         label={"Full Name"}
         type={"text"}
@@ -50,8 +57,8 @@ const ReportForm = () => {
         onChange={(e) => setDetails(e.target.value)}
         required={true}
       />
-      <CTAButton title={'Submit'} onClick={handleSubmitEvent} />
-    </div>
+      <CTAButton title={"Submit"} onClick={handleSubmitEvent} />
+    </motion.div>
   );
 };
 
