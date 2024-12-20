@@ -27,9 +27,9 @@ const Navbar = () => {
                 viewport={{ once: true }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: index * 0.1 }}
+                key={title}
               >
                 <NavLink
-                  key={title}
                   to={renderTo}
                   style={({ isActive }) => ({
                     backgroundColor: isActive ? "#FFF6D5" : "transparent",

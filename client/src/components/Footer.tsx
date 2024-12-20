@@ -34,9 +34,9 @@ const Footer = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1, delay: 0.3 * index }}
+                key={title}
               >
                 <Link
-                  key={title}
                   to={renderTo}
                   className="hover:underline underline-offset-4"
                 >

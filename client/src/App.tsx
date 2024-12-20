@@ -1,5 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
+import Layout from "./components/layouts/Layout";
+
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Report from "./pages/Report";
@@ -8,13 +10,15 @@ import Create from "./pages/Create";
 
 const App = () => {
   return (
-    <Routes>
-      <Route path={"/"} element={<Home />} />
-      <Route path={"/about"} element={<About />} />
-      <Route path={"/report"} element={<Report />} />
-      <Route path={"/gallery"} element={<Gallery />} />
-      <Route path={"/create"} element={<Create />} />
-    </Routes>
+    <Layout>
+      <Routes>
+        <Route path={"/"} element={<Home />} />
+        <Route path={"/about"} element={<About />} />
+        <Route path={"/report"} element={<Report />} />
+        <Route path={"/gallery"} element={<Gallery />} />
+        <Route path={"/create"} element={<Create />} />
+      </Routes>
+    </Layout>
   );
 };
 

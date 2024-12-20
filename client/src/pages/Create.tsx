@@ -1,11 +1,5 @@
-import Layout from "../components/layouts/Layout";
-
 const Create = () => {
-  return (
-    <Layout>
-      <div></div>
-    </Layout>
-  );
+  return <div></div>;
 };
 
 export default Create;

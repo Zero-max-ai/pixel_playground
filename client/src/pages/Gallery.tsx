@@ -1,11 +1,5 @@
-import Layout from "../components/layouts/Layout";
-
 const Gallery = () => {
-  return (
-    <Layout>
-      <div></div>
-    </Layout>
-  );
+  return <div>gallery</div>;
 };
 
 export default Gallery;
