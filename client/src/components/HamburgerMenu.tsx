@@ -4,7 +4,10 @@ import { motion } from "framer-motion";
 const HamburgerMenu = () => {
   const { menuStatus, toggleMenu } = hamburgerStore();
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: -30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
       className="lg:hidden flex flex-col gap-1 items-end justify-center cursor-pointer"
       onClick={toggleMenu}
     >
@@ -22,7 +25,7 @@ const HamburgerMenu = () => {
           translateY: menuStatus ? -0.5 : 0,
         }}
       />
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,16 +1,30 @@
 import { navigationLinks, navigationLinksProps } from "../utils/index";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import hamburgerStore from "../store/hamburgerStore";
 
 const MobileMenu = () => {
   const { menuStatus, toggleMenu } = hamburgerStore();
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: menuStatus ? 1 : 0 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.25 }}
+      className="z-50 absolute block top-12 left-0 w-full py-2 px-5"
+    >
       {" "}
       {menuStatus && (
-        <div className="absolute block lg:hidden left-0 top-12 min-w-full h-[94vh] bg-[#F9F8F6]">
+        <div className="block lg:hidden bg-[#F1F1F1] px-10 py-5">
           <div className="h-full w-full flex flex-col gap-5 items-center justify-center">
+            <NavLink
+              to={"/"}
+              onClick={toggleMenu}
+              className="poppins-black text-xl hover:underline underline-offset-4"
+            >
+              Home
+            </NavLink>
             {navigationLinks.map(
               ({ title, renderTo }: navigationLinksProps) => {
                 return (
@@ -18,7 +32,7 @@ const MobileMenu = () => {
                     key={title}
                     to={renderTo}
                     onClick={toggleMenu}
-                    className="poppins-bold text-2xl hover:underline underline-offset-4"
+                    className="poppins-black text-xl hover:underline underline-offset-4"
                   >
                     {title}
                   </NavLink>
@@ -28,7 +42,7 @@ const MobileMenu = () => {
           </div>
         </div>
       )}
-    </>
+    </motion.div>
   );
 };
 

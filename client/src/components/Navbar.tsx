@@ -18,32 +18,30 @@ const Navbar = () => {
           PixelPlayground
         </Link>
       </motion.div>
-      <div className="flex items-center gap-10 font-semibold block max-lg:hidden">
-        {navigationLinks.map(
-          ({ title, renderTo }: navigationLinksProps, index) => {
-            return (
-              <motion.div
-                initial={{ opacity: 0, y: -20 }}
-                viewport={{ once: true }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: index * 0.1 }}
-                key={title}
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        viewport={{ once: true }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="flex items-center gap-10 font-semibold block max-lg:hidden"
+      >
+        {navigationLinks.map(({ title, renderTo }: navigationLinksProps) => {
+          return (
+            <motion.div key={title}>
+              <NavLink
+                to={renderTo}
+                style={({ isActive }) => ({
+                  backgroundColor: isActive ? "#FFF6D5" : "transparent",
+                  textDecoration: isActive ? "underline" : "none",
+                })}
+                className="hover:underline underline-offset-4 p-2"
               >
-                <NavLink
-                  to={renderTo}
-                  style={({ isActive }) => ({
-                    backgroundColor: isActive ? "#FFF6D5" : "transparent",
-                    textDecoration: isActive ? "underline" : "none",
-                  })}
-                  className="hover:underline underline-offset-4 p-2"
-                >
-                  {title}
-                </NavLink>
-              </motion.div>
-            );
-          }
-        )}
-      </div>
+                {title}
+              </NavLink>
+            </motion.div>
+          );
+        })}
+      </motion.div>
       <HamburgerMenu />
       <MobileMenu />
     </header>

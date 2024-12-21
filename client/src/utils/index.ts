@@ -80,3 +80,22 @@ export const featureCards: FeatureProps[] = [
     iconPath: AI,
   },
 ];
+
+export interface AboutIntroProps {
+  content: string;
+}
+
+export const AboutIntro: AboutIntroProps[] = [
+  {
+    content:
+      "Pixel Playground is your ultimate tool for creating stunning pixel art. Whether you're an experienced artist or just starting your creative journey, our platform is designed to make pixel art both simple and enjoyable.",
+  },
+  {
+    content:
+      "With an intuitive interface and a flexible grid system, you can easily create beautiful pixel art. While the platform doesn’t provide preset color palettes initially, you can effortlessly create and customize your own to match your unique vision.",
+  },
+  {
+    content:
+      "It’s not just about designing art—it’s about unlocking your creative potential. Pixel Playground offers you the tools to bring your retro-inspired creations to life, all in a smooth, accessible environment. Get ready to explore a world of endless possibilities, one pixel at a time.",
+  },
+];

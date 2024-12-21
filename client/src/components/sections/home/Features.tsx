@@ -13,7 +13,7 @@ const Features = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.8 }}
         transition={{ duration: 0.6 }}
-        className="text-[40px] poppins-bold"
+        className="max-lg:text-3xl text-[40px] poppins-bold"
       >
         What Makes Us Special?
       </motion.h1>
@@ -24,12 +24,12 @@ const Features = () => {
               <motion.div
                 initial={{ opacity: 0, x: -100 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, amount: 0.8 }}
+                viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
-                key={iconType}
+                key={title}
                 className="bg-white rounded-[13px] max-w-[500px] flex items-center justify-between gap-10 shadow-lg px-10 py-4 hover:scale-110"
               >
-                <img src={iconPath} />
+                <img src={iconPath} alt={iconType} />
                 <div className="flex flex-col gap-3">
                   <h1 className="poppins-bold text-lg">{title}</h1>
                   <span className="text-sm">{description}</span>
