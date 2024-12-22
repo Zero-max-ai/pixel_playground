@@ -99,3 +99,68 @@ export const AboutIntro: AboutIntroProps[] = [
       "It’s not just about designing art—it’s about unlocking your creative potential. Pixel Playground offers you the tools to bring your retro-inspired creations to life, all in a smooth, accessible environment. Get ready to explore a world of endless possibilities, one pixel at a time.",
   },
 ];
+
+export interface photoGalleryProps {
+  title: string;
+  img: string;
+}
+
+export const photoGallery = [
+  {
+    title: "L1",
+    img: "https://images.pexels.com/photos/371633/pexels-photo-371633.jpeg?cs=srgb&dl=clouds-country-daylight-371633.jpg&fm=jpg",
+  },
+  {
+    title: "L2",
+    img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.NR9MV7uAIX9B1f16mQVe7wHaEG%26pid%3DApi&f=1&ipt=f61c9a26581f5abaf88280203d69abce58ab524c3132194c00a899872c62b867&ipo=images",
+  },
+  {
+    title: "L3",
+    img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.yKgb0_fC1SGvze6Qu7W3OwHaEo%26pid%3DApi&f=1&ipt=44807c5c9105b2f91fc07023890dd5ee1d842dd33d98c7ce7084e55d1ecd3672&ipo=images",
+  },
+  {
+    title: "L4",
+    img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.yLf7kQVaLpxqCZX1VRHw-wHaEK%26pid%3DApi&f=1&ipt=4ccc648e0323bb8d7e7e333b7e1a6e24af22bf159cee5cdd9a79ed59a7a45060&ipo=images",
+  },
+  {
+    title: "L5",
+    img: "https://images.pexels.com/photos/247478/pexels-photo-247478.jpeg?cs=srgb&dl=clouds-cloudy-conifers-247478.jpg&fm=jpg",
+  },
+  {
+    title: "L6",
+    img: "http://www.pixelstalk.net/wp-content/uploads/2016/04/Desktop-landscape-wallpaper-HD-1.jpg",
+  },
+  {
+    title: "L7",
+    img: "https://images.hdqwalls.com/wallpapers/landscape-alpine-mountains-landscape-5k-1k.jpg",
+  },
+  // Duplicates start here
+  {
+    title: "L8",
+    img: "https://images.pexels.com/photos/371633/pexels-photo-371633.jpeg?cs=srgb&dl=clouds-country-daylight-371633.jpg&fm=jpg",
+  },
+  {
+    title: "L9",
+    img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.NR9MV7uAIX9B1f16mQVe7wHaEG%26pid%3DApi&f=1&ipt=f61c9a26581f5abaf88280203d69abce58ab524c3132194c00a899872c62b867&ipo=images",
+  },
+  {
+    title: "L10",
+    img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.yKgb0_fC1SGvze6Qu7W3OwHaEo%26pid%3DApi&f=1&ipt=44807c5c9105b2f91fc07023890dd5ee1d842dd33d98c7ce7084e55d1ecd3672&ipo=images",
+  },
+  {
+    title: "L11",
+    img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.yLf7kQVaLpxqCZX1VRHw-wHaEK%26pid%3DApi&f=1&ipt=4ccc648e0323bb8d7e7e333b7e1a6e24af22bf159cee5cdd9a79ed59a7a45060&ipo=images",
+  },
+  {
+    title: "L12",
+    img: "https://images.pexels.com/photos/247478/pexels-photo-247478.jpeg?cs=srgb&dl=clouds-cloudy-conifers-247478.jpg&fm=jpg",
+  },
+  {
+    title: "L13",
+    img: "http://www.pixelstalk.net/wp-content/uploads/2016/04/Desktop-landscape-wallpaper-HD-1.jpg",
+  },
+  {
+    title: "L14",
+    img: "https://images.hdqwalls.com/wallpapers/landscape-alpine-mountains-landscape-5k-1k.jpg",
+  },
+];
