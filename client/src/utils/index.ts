@@ -16,7 +16,7 @@ export interface missionProps {
   description: string;
 }
 
-export const missionDetails = [
+export const missionDetails: missionProps[] = [
   {
     title: "Empower Creativity",
     description:
@@ -106,7 +106,7 @@ export interface photoGalleryProps {
   img: string;
 }
 
-export const photoGallery = [
+export const photoGallery: photoGalleryProps[] = [
   {
     title: "L1",
     img: "https://images.pexels.com/photos/371633/pexels-photo-371633.jpeg?cs=srgb&dl=clouds-country-daylight-371633.jpg&fm=jpg",
