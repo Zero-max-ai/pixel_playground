@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { navigationLinks, navigationLinksProps } from "../utils/index";
+import { navigationLinks } from "../utils/index";
 import { motion } from "framer-motion";
 
 const Footer = () => {
@@ -27,7 +27,7 @@ const Footer = () => {
           </Link>
         </motion.div>
         {navigationLinks.map(
-          ({ title, renderTo }: navigationLinksProps, index) => {
+          ({ title, renderTo }, index) => {
             return (
               <motion.div
                 initial={{ opacity: 0, x: -20 }}

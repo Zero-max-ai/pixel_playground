@@ -39,7 +39,7 @@ const TeamSection = () => {
         </motion.span>
         <RouteButton
           title={"Connect with me"}
-          loc={""}
+          loc={"https://www.linkedin.com/in/akshat-gangi-b457a61ab/"}
           classname="bg-[#DBEAFE] hover:bg-[#C3DCFD]"
           target="_blank"
         />

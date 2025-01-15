@@ -21,6 +21,7 @@ const IntroSection = () => {
               viewport={{ once: true }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.2 * index }}
+              key={content}
             >
               {content}
             </motion.span>

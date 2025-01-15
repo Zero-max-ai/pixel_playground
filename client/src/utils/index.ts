@@ -3,10 +3,11 @@ export interface navigationLinksProps {
   renderTo: string;
 }
 
-export const navigationLinks = [
+export const navigationLinks: navigationLinksProps[] = [
   { title: "Create", renderTo: "/create" },
   { title: "Gallery", renderTo: "/gallery" },
   { title: "About", renderTo: "/about" },
+  { title: "Faq", renderTo: "/faq" },
   { title: "Report", renderTo: "/report" },
 ];
 
@@ -164,3 +165,11 @@ export const photoGallery = [
     img: "https://images.hdqwalls.com/wallpapers/landscape-alpine-mountains-landscape-5k-1k.jpg",
   },
 ];
+
+export const faqList = [
+  { header: 'What is Pixel Playground?', context: 'Pixel Playground is a creative platform where you can design pixel-based artwork. Use our drawing tools to create and experiment with your designs. It’s perfect for artists and beginners alike!' },
+  { header: 'How do I use the Create page tools?', context: 'Select a tool from the Create page toolbox (e.g., pencil or eraser) and start drawing. Customize your settings like color and size from the toolbar. Save or share your designs when done!' },
+  {},
+  {},
+  {},
+]
