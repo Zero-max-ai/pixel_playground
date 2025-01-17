@@ -4,6 +4,7 @@ export interface navigationLinksProps {
 }
 
 export const navigationLinks: navigationLinksProps[] = [
+  // { title: "Home", renderTo: "/home" },
   { title: "Create", renderTo: "/create" },
   { title: "Gallery", renderTo: "/gallery" },
   { title: "About", renderTo: "/about" },
@@ -166,10 +167,167 @@ export const photoGallery: photoGalleryProps[] = [
   },
 ];
 
-export const faqList = [
-  { header: 'What is Pixel Playground?', context: 'Pixel Playground is a creative platform where you can design pixel-based artwork. Use our drawing tools to create and experiment with your designs. It’s perfect for artists and beginners alike!' },
-  { header: 'How do I use the Create page tools?', context: 'Select a tool from the Create page toolbox (e.g., pencil or eraser) and start drawing. Customize your settings like color and size from the toolbar. Save or share your designs when done!' },
-  {},
-  {},
-  {},
-]
+interface faqDetailsProps {
+  header: string;
+  context: string;
+}
+
+export const faqDetails: faqDetailsProps[] = [
+  {
+    header: "What is Pixel Playground?",
+    context:
+      "Pixel Playground is a creative platform where you can design pixel-based artwork. Use our drawing tools to create and experiment with your designs. It’s perfect for artists and beginners alike!",
+  },
+  {
+    header: "How do I use the Create page tools?",
+    context:
+      "Select a tool from the Create page toolbox (e.g., pencil or eraser) and start drawing. Customize your settings like color and size from the toolbar. Save or share your designs when done!",
+  },
+  {
+    header: "What should I do if a feature doesn’t work?",
+    context:
+      "If a feature doesn’t work as expected, try refreshing the page or clearing your browser cache. If the issue persists, you can report it using our Contact or Report page.",
+  },
+  {
+    header: "Where can I report bugs or issues?",
+    context:
+      "You can report bugs or issues using the form available on our Report page. Your feedback helps us improve and create a better experience for everyone!",
+  },
+  {
+    header: "Is my data safe?",
+    context:
+      "We prioritize your data security. Pixel Playground uses industry-standard practices to ensure that your designs and information are protected.",
+  },
+  {
+    header: "Can I save my artwork?",
+    context:
+      "Yes! You can save your artwork as an image file directly to your device. Future updates will include a cloud save option for easier access across devices.",
+  },
+  {
+    header: "Is Pixel Playground free to use?",
+    context:
+      "Absolutely! Pixel Playground is free to use. Some advanced tools and features may require a premium subscription in the future.",
+  },
+  {
+    header: "What devices are supported?",
+    context:
+      "Pixel Playground is accessible via modern web browsers on desktop, tablet, and mobile devices. For the best experience, we recommend using a larger screen.",
+  },
+];
+
+export const flameStructure = [
+  ["red", "red"],
+  ["red", "orange", "orange", "red"],
+  ["red", "orange", "yellow", "yellow", "orange", "red"],
+  ["red", "orange", "yellow", "yellow", "yellow", "orange", "orange", "red"],
+  ["red", "orange", "yellow", "yellow", "yellow", "orange", "red"],
+  ["red", "orange", "orange", "yellow", "yellow", "orange", "red"],
+  ["red", "orange", "yellow", "yellow", "orange", "orange", "red", "red"],
+  [
+    "red",
+    "orange",
+    "orange",
+    "yellow",
+    "yellow",
+    "orange",
+    "orange",
+    "red",
+    "red",
+  ],
+  [
+    "red",
+    "orange",
+    "orange",
+    "yellow",
+    "yellow",
+    "yellow",
+    "yellow",
+    "orange",
+    "orange",
+    "red",
+  ],
+  [
+    "red",
+    "orange",
+    "orange",
+    "yellow",
+    "yellow",
+    "yellow",
+    "yellow",
+    "yellow",
+    "orange",
+    "orange",
+    "red",
+  ],
+  [
+    "red",
+    "orange",
+    "orange",
+    "yellow",
+    "yellow",
+    "yellow",
+    "yellow",
+    "yellow",
+    "yellow",
+    "orange",
+    "red",
+    "red",
+  ],
+  [
+    "red",
+    "orange",
+    "orange",
+    "yellow",
+    "yellow",
+    "yellow",
+    "yellow",
+    "yellow",
+    "yellow",
+    "orange",
+    "red",
+    "red",
+  ],
+  [
+    "red",
+    "orange",
+    "orange",
+    "yellow",
+    "yellow",
+    "yellow",
+    "yellow",
+    "yellow",
+    "orange",
+    "orange",
+    "red",
+    "red",
+  ],
+  [
+    "red",
+    "orange",
+    "orange",
+    "orange",
+    "orange",
+    "yellow",
+    "yellow",
+    "yellow",
+    "yellow",
+    "orange",
+    "red",
+  ],
+  [
+    "red",
+    "red",
+    "red",
+    "orange",
+    "orange",
+    "orange",
+    "orange",
+    "yellow",
+    "yellow",
+    "orange",
+    "orange",
+    "orange",
+    "red",
+  ],
+  ["red", "red", "red", "red", "red", "red", "red"],
+];

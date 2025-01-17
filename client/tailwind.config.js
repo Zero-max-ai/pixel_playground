@@ -3,6 +3,15 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        display: ['Bowlby One'],
+        mono: ['Overpass Mono', 'monospace'],
+      },
+      fontWeight: {
+        regular: 400,
+        medium: 500,
+        semibold: 600,
+      },
       colors: {
         textColor: "#1F2937",
         buttonColor: "#FBBF24",

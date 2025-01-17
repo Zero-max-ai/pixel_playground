@@ -1,56 +1,64 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Bowlby+One&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body,
-html {
-  font-family: "Inter", serif;
-}
-
-.poppins-thin {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.poppins-light {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
+.bowlby-one {
+  font-family: "Bowlby One", serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
+.anonymous-pro-regular {
+  font-family: "Anonymous Pro", serif;
+  font-weight: 400;
   font-style: normal;
 }
 
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
+.anonymous-pro-bold {
+  font-family: "Anonymous Pro", serif;
   font-weight: 700;
   font-style: normal;
 }
 
-.poppins-extrabold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.poppins-black {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
+/*
 .custom-input {
   @apply w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 outline-none;
+}
+*/
+
+.red {
+  background-color: #e55432;
+  box-shadow: #e55432 0px 7px 29px 6px;
+}
+
+.orange {
+  background-color: #f58231;
+  box-shadow: #f58231 0px 7px 29px 6px;
+}
+
+.yellow {
+  background-color: #f7d358;
+  box-shadow: #f7d358 0px 7px 29px 4px;
+}
+
+.black {
+  background-color: #000000;
+}
+
+.brown {
+  background-color: #8b6f54;
+}
+
+.red {
+  background-color: #ff0000;
+}
+
+.light_blue {
+  background-color: rgb(90, 183, 206);
+}
+
+.grey {
+  background-color: #3f3f46;
 }
