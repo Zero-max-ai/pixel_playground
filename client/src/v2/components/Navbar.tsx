@@ -1,10 +1,14 @@
 import { Link, NavLink } from "react-router-dom";
 import { navigationLinks } from "../../utils/";
+import Hamburger from "./Hamburger";
+import MobileMenu from "./MobileMenu";
+import { hamburgerStore } from "../store/hamburger";
 
 const Navbar = () => {
+  const { isOpen } = hamburgerStore();
   return (
-    <header className="flex items-center justify-between px-20 py-2">
-      <Link to={"/"} className="bowlby-one text-xl">
+    <header className="flex items-center justify-between md:px-20 px-5 py-2 shadow">
+      <Link to={"/"} className="bowlby-one sm:text-xl">
         Pixel Playground
       </Link>
       <div className="flex items-center gap-5 max-sm:hidden">
@@ -21,6 +25,12 @@ const Navbar = () => {
           </NavLink>
         ))}
       </div>
+      <Hamburger />
+      {isOpen && (
+        <div className="absolute sm:hidden top-10 left-0 h-[90vh] bg-indigo-200 w-full">
+          <MobileMenu />
+        </div>
+      )}
     </header>
   );
 };

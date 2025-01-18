@@ -33,6 +33,11 @@ export const missionDetails: missionProps[] = [
     description:
       "We believe creating pixel art should be intuitive and fun for everyone, regardless of skill level.",
   },
+  {
+    title: "Encourage Experimentation",
+    description:
+      "We encourage users to explore, play, and experiment with pixel art, discovering new creative possibilities along the way.",
+  },
 ];
 
 export interface reportOptionsProps {

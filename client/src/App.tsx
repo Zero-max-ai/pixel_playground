@@ -29,6 +29,8 @@ import Layout from './v2/components/layout/Layout'
 import Home from './v2/pages/Home'
 import NotFound from './v2/pages/NotFound'
 import Faq from './v2/pages/Faq'
+import About from './v2/pages/About'
+import Report from './v2/pages/Report'
 
 const App = () => {
   return (
@@ -36,6 +38,8 @@ const App = () => {
       <Routes>
         <Route path={'/'} element={<Home />} />
         <Route path={'/faq'} element={<Faq />} />
+        <Route path={'/about'} element={<About />} />
+        <Route path={'/report'} element={<Report />} />
         <Route path={'*'} element={<NotFound />} />
       </Routes>
     </Layout>

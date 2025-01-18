@@ -5,7 +5,7 @@ interface SectionLayoutProps {
 
 const SectionLayout: React.FC<SectionLayoutProps> = ({children, background}) => {
   return (
-    <div className={`py-40 ${background}`}>
+    <div className={`sm:pt-20 sm:pb-10 pt-16 pb-10: ${background}`}>
       {children}
     </div>
   )
