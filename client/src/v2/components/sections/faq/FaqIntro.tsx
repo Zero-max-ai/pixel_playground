@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const FaqIntro = () => {
   return (
-    <div className="max-sm:w-11/12 mx-auto pt-20 flex flex-col gap-1">
+    <div className="w-11/12 sm:w-7/12 mx-auto pt-20 flex flex-col items-start justify-center gap-1">
       <h1 className="bowlby-one text-2xl sm:text-4xl">
         Frequently asked questions
       </h1>

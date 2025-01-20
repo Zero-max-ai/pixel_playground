@@ -13,8 +13,8 @@ const AccordionDropdown: React.FC<AccordionDropdownProps> = ({
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="cursor-pointer py-2 px-1 bg-indigo-100">
-      <div className="flex items-center justify-between" onClick={() => setIsOpen(!isOpen)}>
+    <div className="w-full py-2 px-1 bg-indigo-100">
+      <div className="flex items-center justify-between cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
         <h1 className="anonymous-pro-bold">{header}</h1>
         <img
           src={Arrow}

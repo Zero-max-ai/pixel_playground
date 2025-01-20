@@ -1,7 +1,9 @@
+import ReportSection from '../components/sections/report/ReportSection'
+
 const Report = () => {
   return(
     <div>
-      report page
+      <ReportSection />
     </div>
   )
 }
