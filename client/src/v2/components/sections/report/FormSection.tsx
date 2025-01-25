@@ -40,7 +40,7 @@ const FormSection = () => {
         value={description}
         onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setDescription(e.target.value)}
       />
-      <button className="bg-indigo-200 hover:bg-indigo-300 py-3 px-1 w-full shadow-[4px_4px_1px_#818cf8] hover:shadow-none transition-all duration-300 outline-none">Submit</button>
+      <button className="bg-indigo-200 focus:bg-indigo-300 py-3 px-1 w-full shadow-[4px_4px_1px_#818cf8] hover:shadow-none transition-all duration-300 outline-none">Submit</button>
     </div>
   );
 };

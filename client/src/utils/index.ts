@@ -107,6 +107,20 @@ export const AboutIntro: AboutIntroProps[] = [
   },
 ];
 
+export interface testimonialProps {
+  image: string;
+  title: string;
+  link: string;
+}
+
+export const testimonial: testimonialProps[] = [
+  {
+    image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpng.pngtree.com%2Fpng-clipart%2F20190920%2Foriginal%2Fpngtree-cute-pixel-dog-illustration-png-image_4624780.jpg&f=1&nofb=1&ipt=b5be1ba4d1613220479b675638221b3c5389bf62a630a5f2cbd3870ea39fd4a6&ipo=images',
+    title: 'Dog Pfp',
+    link: '/gallery/dog_pfp'
+  }
+]
+
 export interface photoGalleryProps {
   title: string;
   img: string;
