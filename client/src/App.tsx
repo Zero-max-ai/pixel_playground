@@ -31,6 +31,7 @@ import NotFound from './v2/pages/NotFound'
 import Faq from './v2/pages/Faq'
 import About from './v2/pages/About'
 import Report from './v2/pages/Report'
+import Create from './v2/pages/Create'
 
 const App = () => {
   return (
@@ -40,6 +41,7 @@ const App = () => {
         <Route path={'/faq'} element={<Faq />} />
         <Route path={'/about'} element={<About />} />
         <Route path={'/report'} element={<Report />} />
+        <Route path={'/create'} element={<Create />} />
         <Route path={'*'} element={<NotFound />} />
       </Routes>
     </Layout>
