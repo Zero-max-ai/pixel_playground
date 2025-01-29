@@ -54,8 +54,8 @@ export const reportOptions: reportOptionsProps[] = [
 ];
 
 import AI from "../assets/AI.svg";
-import Download from "../assets/Download.svg";
-import ColorPalette from "../assets/ColorPalette.svg";
+import Download from "../assets/Download.png";
+import ColorPalette from "../assets/ColorPalette.png";
 
 export interface FeatureProps {
   title: string;

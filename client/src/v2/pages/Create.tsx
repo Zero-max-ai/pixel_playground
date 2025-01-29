@@ -1,6 +1,6 @@
 import PixelatedGridCanvas from '../components/sections/create/PixelatedGridCanvas'
 
-const Create = () => {
+const Create: React.FC = () => {
   return (
     <div>
       <PixelatedGridCanvas />
