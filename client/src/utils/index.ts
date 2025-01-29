@@ -12,6 +12,21 @@ export const navigationLinks: navigationLinksProps[] = [
   { title: "Report", renderTo: "/report" },
 ];
 
+import Github from '../assets/Github.png'
+import Figma from '../assets/Figma.png'
+import Gitlab from '../assets/Gitlab.png'
+
+export interface socialLinksProps {
+  image: string;
+  link: string;
+}
+
+export const socialLinks: socialLinksProps[] = [
+  { image: Github, link: '' },
+  { image: Figma, link: '' },
+  { image: Gitlab, link: ''}
+]
+
 export interface missionProps {
   title: string;
   description: string;
