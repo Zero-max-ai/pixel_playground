@@ -3,6 +3,7 @@ import SectionLayout from "../../layout/SectionLayout";
 import "./styles.css";
 import GridEraser from "../../../../assets/GridEraser.png";
 import Trash from "../../../../assets/Trash.png";
+import Download from '../../../../assets/Download.png'
 
 const App: React.FC = () => {
   //  const [eraser, setEraser] = useState(false);
@@ -52,6 +53,36 @@ const App: React.FC = () => {
     setDeleteConfirm(false);
   }
 
+  const downloadImage = () => {
+    if (!gridRef.current) return;
+
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    const gridSize = 32;
+    const pixelSize = 20;
+
+    canvas.width = gridSize * pixelSize;
+    canvas.height = gridSize * pixelSize;
+
+    const pixels = gridRef.current.querySelectorAll(".pixel");
+
+    pixels.forEach((pixel, index) => {
+      const x = (index % gridSize) * pixelSize;
+      const y = Math.floor(index / gridSize) * pixelSize;
+      const bgColor = window.getComputedStyle(pixel).backgroundColor;
+      ctx.fillStyle = bgColor;
+      ctx.fillRect(x, y, pixelSize, pixelSize);
+    });
+
+    const image = canvas.toDataURL('image.png');
+    const link = document.createElement('a');
+    link.href = image;
+    link.download = 'pixel-art.png';
+    link.click()
+  }
+
   return (
     <SectionLayout>
       <div className="flex flex-col items-center justify-center gap-5 w-11/12 sm:w-7/12 mx-auto pb-10">
@@ -79,12 +110,13 @@ const App: React.FC = () => {
           </div>
           <div className="flex flex-col gap-3 bg-indigo-50 p-3 rounded-md">
             {/* color picker */}
-            <button className={`outline-none w-[32px] h-[32px] rounded-full`}>
+            <button className="outline-none w-[32px] h-[32px] p-1">
               <input
                 type="color"
                 id="selectedColorPicker"
                 value={selectedColor}
                 onChange={(e) => setSelectedColor(e.target.value)}
+                className="w-[32px] h-[32px] outline-none cursor-pointer"
               />
             </button>
             {/*grid lines remover*/}
@@ -101,6 +133,11 @@ const App: React.FC = () => {
               className="outline-none p-1"
             >
               <img src={Trash} className="w-[32px] h-[32px]" />
+            </button>
+
+            {/* download button */}
+            <button onClick={downloadImage} className="outline-none p-1">
+              <img src={Download} className="w-[32px] h-[32px]" />
             </button>
 
             {/* eraser */}
