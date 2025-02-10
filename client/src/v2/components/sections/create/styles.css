@@ -16,3 +16,6 @@
   -webkit-user-select: none;
 }
 
+.warn {
+  color: red;
+}
